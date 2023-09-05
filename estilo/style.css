@@ -3,7 +3,6 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: 'Kanit', sans-serif;
 }
 
@@ -17,16 +16,16 @@ nav.menu-lateral {
     width: 72px;
     height: 100%;
     background-color: rgb(36, 36, 36);
-    padding: 40px 0 40px 1%;
+    padding: 40px 0px 40px 1%;
     box-shadow: 3px -2px 1px 0px rgb(16, 93, 195);
     position: fixed;
     top: 0;
     left: 0;
     overflow: hidden;
-    transition: .3s;
+    transition: .5s;
 }
 
-nav.menu-lateral:hover {
+nav.menu-lateral.expandir {
     width: 300px;
     transition: .5s;
 }
@@ -61,15 +60,25 @@ ul > li.item-menu > a {
     line-height: 40px;
 }
 
+ul > li.ativo {
+    background-color: rgb(16, 94, 195);
+    
+}
+
 ul > li.item-menu:hover {
     background-color: rgb(16, 93, 195);
     transition: .3s;
 }
 
 ul > li.item-menu > a >.txt-link {
-    margin-left: 25px;
+    margin-left: 65px;
+    transition: .5s;
+}
+
+nav.menu-lateral.expandir .txt-link {
+    margin-left:40px;
 }
 
 ul > li.item-menu > a > .icon > i {
-    font-size: 30px;
+    font-size: 25px;
 } 
