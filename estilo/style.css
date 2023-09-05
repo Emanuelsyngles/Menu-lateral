@@ -10,13 +10,25 @@
 
 body {
     height: 100vh;
+    background-color: rgb(92, 92, 92);
 }
 
 nav.menu-lateral {
-    width: 300px;
+    width: 72px;
     height: 100%;
     background-color: rgb(36, 36, 36);
     padding: 40px 0 40px 1%;
+    box-shadow: 3px -2px 1px 0px rgb(16, 93, 195);
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .2s;
+}
+
+nav.menu-lateral:hover {
+    width: 300px;
+    transition: .5s;
 }
 
 /*Botão que irá expandir o menu*/
@@ -49,7 +61,7 @@ ul > li.item-menu > a {
     line-height: 40px;
 }
 
-ul > li.item-menu > a:hover {
+ul > li.item-menu:hover {
     background-color: rgb(16, 93, 195);
     transition: .3s;
 }
