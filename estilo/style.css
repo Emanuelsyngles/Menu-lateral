@@ -23,7 +23,7 @@ nav.menu-lateral {
     top: 0;
     left: 0;
     overflow: hidden;
-    transition: .2s;
+    transition: .3s;
 }
 
 nav.menu-lateral:hover {
